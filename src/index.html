@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d
+    <h2>width</h2>evice-width, 
+    <h2>width</h2>initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            position: relative;
+            width: 
+            800px;
+            height: 400px;
+            overflow: auto;
+            background: blue;
+            margin: 0 auto;
+            margin-top: 40px;
+
+        }
+        .el{
+            height: 200px;
+            background: red;
+            overflow: hidden;
+        }
+        .el + .el{
+            margin-top:20px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="el" id="el1">
+            <h2>el1</h2>
+        </div>
+        <div class="el" id="el2">
+            <h2>el2</h2>
+        </div>
+        <div class="el" id="el3">
+            <h2>el3</h2>
+        </div>
+        <div class="el" id="el4">
+            <h2>el4</h2>
+        </div>
+        <div class="el" id="el5">
+            <h2>el5</h2>
+        </div>
+    </div>
+    <script>
+        const el1= document.getElementById('el1')
+        console.log(el1.getBoundingClientRect())
+    </script>
+</body>
+</html>
